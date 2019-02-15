@@ -26,15 +26,21 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React js is a javascript fram work that solves the problem of fast updating of the dom via the vitrual dom. Like in our to do app when you add a todo item it only updates the todo component and not all the other ones saving time and bandwidth.
+
 - [ ] What does it mean to _think_ in react?
+
+What to think in React means to me is to think in components and reuseablity.
 
 - [ ] Describe state.
 
+State is a feature in react that holds your data.
+
 - [ ] Describe props.
 
-## Project Set Up
+Props are a feature in ract that allow properties of different components to share data with each other.
 
-Follow these steps to set up and work on your project:
+Follow these steps to set up and work on your project
 
 - [ ] Create a forked copy of this project.
 - [ ] Add PM as collaborator on Github.
@@ -43,15 +49,15 @@ Follow these steps to set up and work on your project:
 - [ ] Change directories into `./starwars` (`cd starwars`) and run `yarn install` to retrieve all needed dependencies.
 - [ ] Once you have installed the _node_modules_, run `yarn start or` to get your server up and running.
 - [ ] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
-Follow these steps for completing your project.
+      Follow these steps for completing your project.
 - [ ] Implement the project on this Branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo).
 - [ ] Add your Project Manager as a Reviewer on the Pull-request
-- [ ] PM then will count the HW as done by  merging the branch back into master.
+- [ ] PM then will count the HW as done by merging the branch back into master.
 
 Please note:
 

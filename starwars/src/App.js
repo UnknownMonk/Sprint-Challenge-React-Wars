@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import CharterList from './components/CharterList';
 
 class App extends Component {
   constructor() {
@@ -29,10 +30,23 @@ class App extends Component {
       });
   };
 
+  deleteChar = id => {
+    const newList = [...this.state.starwarsChars].filter(char => {
+      return char.created !== id;
+    });
+    this.setState({
+      starwarsChars: newList
+    });
+  };
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <CharterList
+          deleteChar={this.deleteChar}
+          StarWarsCh={this.state.starwarsChars}
+        />
       </div>
     );
   }
