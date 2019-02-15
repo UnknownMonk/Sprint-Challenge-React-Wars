@@ -30,11 +30,23 @@ class App extends Component {
       });
   };
 
+  deleteChar = id => {
+    const newList = [...this.state.starwarsChars].filter(char => {
+      return char.created !== id;
+    });
+    this.setState({
+      starwarsChars: newList
+    });
+  };
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <CharterList StarWarsCh={this.state.starwarsChars} />
+        <CharterList
+          deleteChar={this.deleteChar}
+          StarWarsCh={this.state.starwarsChars}
+        />
       </div>
     );
   }
