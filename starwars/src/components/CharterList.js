@@ -1,14 +1,15 @@
 import React from 'react';
 import Charter from './Charter';
+import './StarWars.css';
 
-const ChartersList = ({ StarWarsCh }) => {
+const CharterList = ({ StarWarsCh }) => {
   return (
-    <div>
-      {StarWarsCh.map(Char => {
-        <Charter StarWarsCh={Char} />;
+    <div className="card">
+      {StarWarsCh.map(char => {
+        return <Charter char={char} />;
       })}
     </div>
   );
 };
 
-export default ChartersList;
+export default CharterList;

@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Charter = ({ Char }) => {
+const Charter = ({ char }) => {
   return (
     <div>
-      <li>{Char.name}</li>
+      <h4>{char.name}</h4>
     </div>
   );
 };
